@@ -1,0 +1,33 @@
+So far I have created a created a react app. 
+ 
+After reading the brief, the main concern is the website being too old, and has old appeal to it.
+The stock management system dosent work correctly. 
+No mobile version of website/app.
+Returns are coming cos people don’t like style/color; because they cant see it in just 1 picture so we need more.
+People asking about Delivery times.
+ 
+For presentation I will talk about what is bad currently and how we can improve it. 
+Also talk about how to upskill the staff members on agile.
+ 
+For code I will make some pages and show some of these functionalities.
+ 
+Pages that I will create: 
+ 
+Home page (make it look like footlocker)
+-	Navigation bar
+-	Photos
+-	Logo
+-	Banners
+-	Social media logos
+ 
+1 item page (Nike shoe)
+-	Multiple pics
+-	Price
+-	Description
+-	Stock Amount
+ 
+Functionality That I will add:
+-	Stock management?
+-	User authentication (gives the business data on users (future deals and discounts))
+-	Desktop/Mobile compatibility?
+-	Estimated delivery times / Tracking shipment?
