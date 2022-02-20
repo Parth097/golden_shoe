@@ -3,7 +3,10 @@ import {
   Navbar,
   Nav,
   NavDropdown,
-  Container
+  Container,
+  Form,
+  FormControl,
+  Button,
 } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pageComponents/home";
@@ -14,22 +17,30 @@ import MyAccount from "./pageComponents/myAccount";
 import About from "./pageComponents/about";
 import Contact from "./pageComponents/contact";
 
+import LoginButton from "./LoginButton";
+import LogoutButton from "./LogoutButton";
 
 class NavbarComp extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Navbar bg="myNav" variant="dark" expand="lg">
+          <Navbar bg="myNav" expand="lg">
             <Container>
-              <Navbar.Brand as={Link} to={"/home"}>Golden Shoe</Navbar.Brand>
+              <Navbar.Brand as={Link} to={"/home"}>
+                Golden Shoe
+              </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
                   <Nav.Link as={Link} to={"/home"}>
                     Home
                   </Nav.Link>
-                  <NavDropdown bg="myNav" title="Category" id="basic-nav-dropdown">
+                  <NavDropdown
+                    bg="myNav"
+                    title="Category"
+                    id="basic-nav-dropdown"
+                  >
                     <NavDropdown.Item as={Link} to={"/mens"}>
                       Mens
                     </NavDropdown.Item>
@@ -49,6 +60,12 @@ class NavbarComp extends Component {
                   <Nav.Link as={Link} to={"/contact"}>
                     Contact
                   </Nav.Link>
+                  <Nav.Link as={LoginButton}>
+                    Login
+                  </Nav.Link>
+                  <Nav.Link as={LogoutButton}>
+                    Login
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -57,25 +74,25 @@ class NavbarComp extends Component {
         <div>
           <Switch>
             <Route path="/home">
-              <Home/> 
+              <Home />
             </Route>
             <Route path="/mens">
-              <Mens/> 
+              <Mens />
             </Route>
             <Route path="/women">
-              <Women/> 
+              <Women />
             </Route>
             <Route path="/children">
-              <Children/> 
+              <Children />
             </Route>
             <Route path="/myAccount">
-              <MyAccount/> 
+              <MyAccount />
             </Route>
             <Route path="/about">
-              <About/> 
+              <About />
             </Route>
             <Route path="/contact">
-              <Contact/> 
+              <Contact />
             </Route>
           </Switch>
         </div>
