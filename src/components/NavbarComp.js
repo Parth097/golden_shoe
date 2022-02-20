@@ -60,12 +60,8 @@ class NavbarComp extends Component {
                   <Nav.Link as={Link} to={"/contact"}>
                     Contact
                   </Nav.Link>
-                  <Nav.Link as={LoginButton}>
-                    Login
-                  </Nav.Link>
-                  <Nav.Link as={LogoutButton}>
-                    Login
-                  </Nav.Link>
+                  <Nav.Link as={LoginButton}>Login</Nav.Link>
+                  <Nav.Link as={LogoutButton}>Login</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>

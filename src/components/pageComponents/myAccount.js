@@ -4,10 +4,10 @@ import { useAuth0 } from "@auth0/auth0-react";
 const MyAccount = () => {
   const { user, isAuthenticated } = useAuth0();
 
-   if(!isAuthenticated) return<h3>Please login to see your account details.</h3>
+  if (!isAuthenticated)
+    return <h3>Please login to see your account details.</h3>;
 
   return (
-    
     isAuthenticated && (
       <div>
         <img src={user.picture} alt={user.name} />
