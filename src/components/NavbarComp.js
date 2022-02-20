@@ -4,9 +4,6 @@ import {
   Nav,
   NavDropdown,
   Container,
-  Form,
-  FormControl,
-  Button,
 } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pageComponents/home";
@@ -17,8 +14,8 @@ import MyAccount from "./pageComponents/myAccount";
 import About from "./pageComponents/about";
 import Contact from "./pageComponents/contact";
 
-import LoginButton from "./LoginButton";
-import LogoutButton from "./LogoutButton";
+import LoginButton from "./LoginLink";
+import LogoutButton from "./LogoutLink";
 
 class NavbarComp extends Component {
   render() {
@@ -61,7 +58,7 @@ class NavbarComp extends Component {
                     Contact
                   </Nav.Link>
                   <Nav.Link as={LoginButton}>Login</Nav.Link>
-                  <Nav.Link as={LogoutButton}>Login</Nav.Link>
+                  <Nav.Link as={LogoutButton}>Logout</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
