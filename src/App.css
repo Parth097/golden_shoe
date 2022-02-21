@@ -126,3 +126,31 @@ a{
   color: white !important;
   text-decoration: none !important;
 }
+
+.btn-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn-video{
+  width: 150px;
+  height: 65px;
+  margin: 10px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  color: white;
+  background-color: transparent;
+  transition: all ease-out 0.3s;
+  font-size: 2rem;
+  outline: none;
+}
+
+.btn-video:hover{
+   background-color: white;
+   color: maroon;
+   
+}
