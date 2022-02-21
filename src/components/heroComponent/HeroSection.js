@@ -11,8 +11,8 @@ function HeroSection() {
       <p>What's Your Perfect Fit?</p>
 
       <div class="btn-container">
-        <button class="btn-video">New</button>
-        <button class="btn-video">Sale</button>
+        <button class="btn-video">NEW</button>
+        <button class="btn-video">SALE</button>
       </div>
     </div>
   );

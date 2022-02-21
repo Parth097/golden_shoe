@@ -87,13 +87,10 @@ a:focus::before {
 }
 
 .footer {
-  margin-top: 1rem;
+  background-color: #242424;
+  padding: 2rem 0 1rem 0;
   background: maroon;
   color: white;
-  padding: 10px 50px;
-  /* position: fixed; */
-  bottom: 0;
-  left: 0;
   width: 100%;
   justify-content: center;
   display: flex;
