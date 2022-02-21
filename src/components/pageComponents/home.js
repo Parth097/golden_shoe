@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import '../../App.css';
 import HeroSection from '../heroComponent/HeroSection';
+import Cards from '../cardComponents/Cards';
 
 
 
-class home extends Component {
+class Home extends Component {
   render() {
     return (
       <>
-        <HeroSection/>
+        <HeroSection />
+        <Cards />
       </>
     );
   }
 }
 
-export default home;
+export default Home;

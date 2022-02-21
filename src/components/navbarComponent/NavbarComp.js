@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Container,
-} from "react-bootstrap";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import Home from "../pageComponents/Home";
+import Designer from "../pageComponents/Designer";
+import Sports from "../pageComponents/Sports";
 import Mens from "../pageComponents/Mens";
 import Women from "../pageComponents/Women";
 import Children from "../pageComponents/Children";
@@ -14,8 +12,16 @@ import MyAccount from "../pageComponents/MyAccount";
 import About from "../pageComponents/About";
 import Contact from "../pageComponents/Contact";
 
+
 import LoginButton from "../authenticationComponents/LoginLink";
 import LogoutButton from "../authenticationComponents/LogoutLink";
+
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Container,
+} from "react-bootstrap";
 
 class NavbarComp extends Component {
   render() {
@@ -24,37 +30,43 @@ class NavbarComp extends Component {
         <div>
           <Navbar bg="myNav" expand="lg">
             <Container>
-              <Navbar.Brand as={Link} to={"/home"}>
+              <Navbar.Brand as={Link} to={"/Home"}>
                 Golden Shoe
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                  <Nav.Link as={Link} to={"/home"}>
+                  <Nav.Link as={Link} to={"/Home"}>
                     Home
+                  </Nav.Link>
+                  <Nav.Link as={Link} to={"/Designer"}>
+                    Designer
+                  </Nav.Link>
+                  <Nav.Link as={Link} to={"/Sports"}>
+                    Sports
                   </Nav.Link>
                   <NavDropdown
                     bg="myNav"
                     title="Category"
                     id="basic-nav-dropdown"
                   >
-                    <NavDropdown.Item as={Link} to={"/mens"}>
+                    <NavDropdown.Item as={Link} to={"/Mens"}>
                       Mens
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to={"/women"}>
+                    <NavDropdown.Item as={Link} to={"/Women"}>
                       Women
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to={"/children"}>
+                    <NavDropdown.Item as={Link} to={"/Children"}>
                       Children
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link as={Link} to={"/myAccount"}>
+                  <Nav.Link as={Link} to={"/MyAccount"}>
                     My Account
                   </Nav.Link>
-                  <Nav.Link as={Link} to={"/about"}>
+                  <Nav.Link as={Link} to={"/About"}>
                     About
                   </Nav.Link>
-                  <Nav.Link as={Link} to={"/contact"}>
+                  <Nav.Link as={Link} to={"/Contact"}>
                     Contact
                   </Nav.Link>
                   <Nav.Link as={LoginButton}>Login</Nav.Link>
@@ -66,25 +78,31 @@ class NavbarComp extends Component {
         </div>
         <div>
           <Switch>
-            <Route path="/home">
+            <Route path="/Home">
               <Home />
             </Route>
-            <Route path="/mens">
+            <Route path="/Designer">
+              <Designer />
+            </Route>
+            <Route path="/Sports">
+              <Sports />
+            </Route>
+            <Route path="/Mens">
               <Mens />
             </Route>
-            <Route path="/women">
+            <Route path="/Women">
               <Women />
             </Route>
-            <Route path="/children">
+            <Route path="/Children">
               <Children />
             </Route>
-            <Route path="/myAccount">
+            <Route path="/MyAccount">
               <MyAccount />
             </Route>
-            <Route path="/about">
+            <Route path="/About">
               <About />
             </Route>
-            <Route path="/contact">
+            <Route path="/Contact">
               <Contact />
             </Route>
           </Switch>
