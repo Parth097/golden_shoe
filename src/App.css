@@ -6,6 +6,10 @@
   color: white !important;
 }
 
+.navbar-toggler{ 
+  background-color: white !important;
+}
+
 .nav-link {
   color: white !important;
 }

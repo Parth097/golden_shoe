@@ -13,7 +13,7 @@ const MyAccount = () => {
         <img src={user.picture} alt={user.name} />
         <h2>{user.name}</h2>
         <p>{user.email}</p>
-        <pre>{JSON.stringify(user, null, 2)}</pre>
+        {/* <pre>{JSON.stringify(user, null, 2)}</pre> */} {/*This is to show all the data recieved from the Auth0 API, in a json format*/}
       </div>
     )
   );
