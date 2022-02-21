@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavbarComp from "./components/NavbarComp";
-import Footer from "./components/Footer";
+import NavbarComp from "./components/navbarComponent/NavbarComp";
+import Footer from "./components/footerComponent/Footer";
 import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {

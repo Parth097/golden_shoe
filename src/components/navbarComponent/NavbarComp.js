@@ -6,16 +6,16 @@ import {
   Container,
 } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./pageComponents/home";
-import Mens from "./pageComponents/mens";
-import Women from "./pageComponents/women";
-import Children from "./pageComponents/children";
-import MyAccount from "./pageComponents/myAccount";
-import About from "./pageComponents/about";
-import Contact from "./pageComponents/contact";
+import Home from "../pageComponents/home";
+import Mens from "../pageComponents/mens";
+import Women from "../pageComponents/women";
+import Children from "../pageComponents/children";
+import MyAccount from "../pageComponents/myAccount";
+import About from "../pageComponents/about";
+import Contact from "../pageComponents/contact";
 
-import LoginButton from "./LoginLink";
-import LogoutButton from "./LogoutLink";
+import LoginButton from "../authenticationComponents/LoginLink";
+import LogoutButton from "../authenticationComponents/LogoutLink";
 
 class NavbarComp extends Component {
   render() {
