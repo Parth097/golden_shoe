@@ -6,13 +6,13 @@ import {
   Container,
 } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "../pageComponents/home";
-import Mens from "../pageComponents/mens";
-import Women from "../pageComponents/women";
-import Children from "../pageComponents/children";
-import MyAccount from "../pageComponents/myAccount";
-import About from "../pageComponents/about";
-import Contact from "../pageComponents/contact";
+import Home from "../pageComponents/Home";
+import Mens from "../pageComponents/Mens";
+import Women from "../pageComponents/Women";
+import Children from "../pageComponents/Children";
+import MyAccount from "../pageComponents/MyAccount";
+import About from "../pageComponents/About";
+import Contact from "../pageComponents/Contact";
 
 import LoginButton from "../authenticationComponents/LoginLink";
 import LogoutButton from "../authenticationComponents/LogoutLink";
