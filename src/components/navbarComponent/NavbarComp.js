@@ -11,6 +11,8 @@ import Children from "../pageComponents/Children";
 import MyAccount from "../pageComponents/MyAccount";
 import About from "../pageComponents/About";
 import Contact from "../pageComponents/Contact";
+import NikeWT2 from "../productPage/NikeWT2";
+
 
 import LoginButton from "../authenticationComponents/LoginLink";
 import LogoutButton from "../authenticationComponents/LogoutLink";
@@ -98,6 +100,9 @@ class NavbarComp extends Component {
             </Route>
             <Route path="/Contact">
               <Contact />
+            </Route>
+            <Route path="/NikeWT2">
+              <NikeWT2 />
             </Route>
           </Switch>
         </div>

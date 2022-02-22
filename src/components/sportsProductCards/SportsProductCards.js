@@ -13,7 +13,7 @@ function SportsProductCards() {
               text="Nike Waffle Trainer 2"
               price="£84.95"
               label="Nike"
-              path="/"
+              path="/NikeWT2"
             />
             <SportsCardItem
               src="images/productImages/nike_4.jpg"
