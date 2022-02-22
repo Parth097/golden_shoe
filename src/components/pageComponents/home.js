@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import '../../App.css';
-import HeroSection from '../heroComponent/HeroSection';
-import Cards from '../cardComponents/Cards';
-
-
+import React, { Component } from "react";
+import "../../App.css";
+import HeroSection from "../heroComponent/HeroSection";
+import Cards from "../cardComponents/Cards";
+import ImageSlider from "../sliderComponents/ImageSlider";
+import { SliderData } from "../sliderComponents/SliderData";
 
 class Home extends Component {
   render() {
@@ -11,6 +11,8 @@ class Home extends Component {
       <>
         <HeroSection />
         <Cards />
+        <h1>Adventure Awaits</h1>
+        <ImageSlider slides={SliderData} />;
       </>
     );
   }

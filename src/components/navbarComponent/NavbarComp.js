@@ -12,16 +12,10 @@ import MyAccount from "../pageComponents/MyAccount";
 import About from "../pageComponents/About";
 import Contact from "../pageComponents/Contact";
 
-
 import LoginButton from "../authenticationComponents/LoginLink";
 import LogoutButton from "../authenticationComponents/LogoutLink";
 
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Container,
-} from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
 class NavbarComp extends Component {
   render() {

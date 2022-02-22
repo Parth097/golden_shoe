@@ -1,17 +1,17 @@
 .bg-myNav {
-  background-color: maroon;
+  background-color: white;
 }
 
 .navbar-brand {
-  color: white !important;
+  color: black !important;
 }
 
-.navbar-toggler{ 
+.navbar-toggler {
   background-color: white !important;
 }
 
 .nav-link {
-  color: white !important;
+  color: black !important;
 }
 
 .nav-link:hover,
@@ -26,7 +26,7 @@ a:active {
   position: relative;
   display: block;
   transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
-  color: white;
+  color: black;
 }
 .nav-link::before {
   content: "";
@@ -36,7 +36,7 @@ a:active {
   left: 0;
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: black;
   transform-origin: right top;
   transform: scale(0, 1);
   transition: color 0.1s, transform 0.2s ease-out;
@@ -51,18 +51,17 @@ a:focus::before {
 }
 
 .dropdown-menu {
-  background: maroon !important;
+  background: white !important;
 }
 
 .dropdown-item {
-  background-color: maroon !important;
-  color: white !important;
+  background-color: white !important;
+  color: black !important;
   text-decoration: none;
   transition: color 0.1s, background-color 0.1s;
   position: relative;
   display: block;
   transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
-  color: white;
 }
 .dropdown-item::before {
   content: "";
@@ -72,13 +71,13 @@ a:focus::before {
   left: 0;
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: black;
   transform-origin: right top;
   transform: scale(0, 1);
   transition: color 0.1s, transform 0.2s ease-out;
 }
 .dropdown-item:active::before {
-  background-color: white;
+  background-color: black;
 }
 .dropdown-item:hover::before,
 a:focus::before {
@@ -89,11 +88,12 @@ a:focus::before {
 .footer {
   background-color: #242424;
   padding: 2rem 0 1rem 0;
-  background: maroon;
-  color: white;
+  background: white;
+  color: black;
   width: 100%;
   justify-content: center;
   display: flex;
+  border-top: 2px solid black;
 }
 
 a.social {
@@ -108,32 +108,33 @@ a.social:hover {
 }
 
 a.facebook {
-  color: white;
+  color: black;
 }
 
 a.twitter {
-  color: white;
+  color: black;
 }
 
 a.instagram {
-  color: white;
+  color: black;
 }
 
-a{
-  color: white !important;
+a {
+  color: black !important;
   text-decoration: none !important;
 }
 
-.btn-container{
+.btn-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-.btn-video{
+.btn-video {
   width: 150px;
   height: 65px;
   margin: 10px;
@@ -146,8 +147,7 @@ a{
   outline: none;
 }
 
-.btn-video:hover{
-   background-color: white;
-   color: maroon;
-   
+.btn-video:hover {
+  background-color: white;
+  color: black;
 }
