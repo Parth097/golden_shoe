@@ -16,20 +16,6 @@ function SportsProductCards() {
               path="/"
             />
             <SportsCardItem
-              src="images/productImages/nike_2.jpg"
-              text="Nike Air Max Plus"
-              price="£154.95"
-              label="Nike"
-              path="/"
-            />
-            <SportsCardItem
-              src="images/productImages/nike_3.jpg"
-              text="Nike Air Force 1 Pixel"
-              price="£109.95"
-              label="Nike"
-              path="/"
-            />
-            <SportsCardItem
               src="images/productImages/nike_4.jpg"
               text="Nike Air Force 1 '07"
               price="£99.95"
@@ -40,6 +26,22 @@ function SportsProductCards() {
               src="images/productImages/nike_5.jpg"
               text="Nike Air Force 1 Shadow"
               price="£109.95"
+              label="Nike"
+              path="/"
+            />
+          </ul>
+          <ul className="cards__items">
+            <SportsCardItem
+              src="images/productImages/nike_3.jpg"
+              text="Nike Air Force 1 Pixel"
+              price="£109.95"
+              label="Nike"
+              path="/"
+            />
+            <SportsCardItem
+              src="images/productImages/nike_2.jpg"
+              text="Nike Air Max Plus"
+              price="£154.95"
               label="Nike"
               path="/"
             />
@@ -73,6 +75,8 @@ function SportsProductCards() {
               label="Addidas"
               path="/"
             />
+          </ul>
+          <ul className="cards__items">
             <SportsCardItem
               src="images/productImages/addidas_5.jpg"
               text="TERREX FREE HIKER GORE-TEX HIKING SHOES"
@@ -80,8 +84,6 @@ function SportsProductCards() {
               label="Addidas"
               path="/"
             />
-          </ul>
-          <ul className="cards__items">
             <SportsCardItem
               src="images/productImages/reebok_1.jpg"
               text="Reebok HIIT Shoes"
@@ -89,6 +91,8 @@ function SportsProductCards() {
               label="Reebok"
               path="/"
             />
+          </ul>
+          <ul className="cards__items">
             <SportsCardItem
               src="images/productImages/reebok_2.jpg"
               text="Nano X1 Adventure Shoes"
