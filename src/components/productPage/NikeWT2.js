@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../productPage/NikeWT2.css";
-import DetailsThumb from './Thumbnails';
+import DetailsThumb from "./Thumbnails";
 
 class NikeWT2 extends React.Component {
   state = {
@@ -17,7 +17,9 @@ class NikeWT2 extends React.Component {
         description: "Nike Waffle Trainer 2 Men's Shoe",
         content:
           "The Nike Waffle Trainer 2 brings you the classic look of Nike running.Staying true to what you love best, it features the iconic Waffle outsole and era-echoing fabrics on the upper.Its plush midsole lets you journey in comfort, while the exposed foam tongue adds the perfect touch of irreverence.",
-        price:84.95,
+        price: 84.95,
+        size: "Size Available: 6 7 8 9 10 11 12",
+        stock: "Stock Available: 2",
         count: 1,
       },
     ],
@@ -57,6 +59,8 @@ class NikeWT2 extends React.Component {
               </div>
 
               <p>{item.description}</p>
+              <p>{item.size}</p>
+              <p>{item.stock}</p>
               <p>{item.content}</p>
 
               <DetailsThumb
@@ -64,7 +68,7 @@ class NikeWT2 extends React.Component {
                 tab={this.handleTab}
                 myRef={this.myRef}
               />
-              <button className="cart">Add to cart</button>
+              <button className="cart">Add To Cart</button>
             </div>
           </div>
         ))}

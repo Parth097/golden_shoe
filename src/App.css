@@ -14,14 +14,6 @@
   color: black !important;
 }
 
-
-
-
-
-
-
-
-
 .nav-cart:hover,
 a:focus,
 a:active {
@@ -58,15 +50,15 @@ a:focus::before {
   transform: scale(1, 1);
 }
 
-nav .nav-cart{
+nav .nav-cart {
   cursor: pointer;
   padding-top: 5px;
   padding-left: 5px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
 
-nav .nav-cart span{
-  top:-12px;
+nav .nav-cart span {
+  top: -12px;
   right: -7px;
   background: crimson;
   font-size: 10px;
@@ -74,10 +66,7 @@ nav .nav-cart span{
   padding: 3px 5px;
   border-radius: 50%;
   z-index: -1;
-
 }
-
-
 
 .nav-link:hover,
 a:focus,
@@ -215,4 +204,19 @@ a {
 .btn-video:hover {
   background-color: white;
   color: black;
+}
+
+.acc-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.acc-details {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    font-size: 20px;
+  padding: rem;
+  text-align: center;
 }
