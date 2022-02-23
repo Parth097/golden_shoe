@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "../productPage/NikeWT2.css";
-import DetailsThumb from "./DetailsThumb";
+import "../orderComponents/OrderDetails.css";
+import DetailsThumb from "./OrderThumbnails";
 
-class NikeWT2 extends React.Component {
+class OrderDetails extends React.Component {
   state = {
     products: [
       {
@@ -59,16 +59,13 @@ class NikeWT2 extends React.Component {
               </div>
 
               <p>{item.description}</p>
-              <p>{item.size}</p>
-              <p>{item.stock}</p>
-              <p>{item.content}</p>
 
               <DetailsThumb
                 images={item.src}
                 tab={this.handleTab}
                 myRef={this.myRef}
               />
-              <button className="cart">Add To Cart</button>
+              <button className="cart">Track Order</button>
             </div>
           </div>
         ))}
@@ -77,4 +74,4 @@ class NikeWT2 extends React.Component {
   }
 }
 
-export default NikeWT2;
+export default OrderDetails;

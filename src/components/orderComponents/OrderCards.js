@@ -13,13 +13,13 @@ function OrderCards() {
               src="images/productImages/nike_1.jpg"
               text="Order ID: 1"
               label="Order"
-              path="/Designer"
+              path="/OrderDetails"
             />
             <OrderCardItem
               src="images/productImages/nike_4.jpg"
               text="Order ID: 2"
               label="Order"
-              path="/Sports"
+              path="/OrderDetails"
             />
           </ul>
         </div>
