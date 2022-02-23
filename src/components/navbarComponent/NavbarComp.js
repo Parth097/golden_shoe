@@ -12,8 +12,7 @@ import MyAccount from "../pageComponents/MyAccount";
 import About from "../pageComponents/About";
 import Contact from "../pageComponents/Contact";
 import NikeWT2 from "../productPage/NikeWT2";
-
-
+import CartIcon from "../cartComponent/CartIcon.png";
 import LoginButton from "../authenticationComponents/LoginLink";
 import LogoutButton from "../authenticationComponents/LogoutLink";
 
@@ -68,6 +67,12 @@ class NavbarComp extends Component {
                   <Nav.Link as={LoginButton}>Login</Nav.Link>
                   <Nav.Link as={LogoutButton}>Logout</Nav.Link>
                 </Nav>
+                <div className="nav-cart">
+                  <span>0</span>
+                  <Link to="/cart">
+                    <img src={CartIcon} alt="" width="20" />
+                  </Link>
+                </div>
               </Navbar.Collapse>
             </Container>
           </Navbar>
