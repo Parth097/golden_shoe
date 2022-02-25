@@ -6,7 +6,7 @@ const MyAccount = () => {
   const { user, isAuthenticated } = useAuth0();
 
   if (!isAuthenticated)
-    return <h3>Please login to see your account details.</h3>;
+    return <h1>Please login to see your account details.</h1>;
 
   return (
     isAuthenticated && (
